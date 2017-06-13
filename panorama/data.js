@@ -38,7 +38,7 @@ var APP_DATA = {
           "yaw": -2.671369193213719,
           "pitch": 0.12621609759125718,
           "title": "The Friendly Veteran&nbsp;",
-          "text": "\"Don't worry kid, He's just a bit burnt out, that's all.\""
+          "text": "\"Don't worry kid, He's just a bit burned out, that's all.\""
         },
         {
           "yaw": 2.705856227473502,
