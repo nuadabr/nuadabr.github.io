@@ -1,2 +1,2 @@
-# nuadabr.github.io
-A new worker as arrived at the workplace.
+# a tired student's web dump.
+hey, rando. (or teacher, or friend.)

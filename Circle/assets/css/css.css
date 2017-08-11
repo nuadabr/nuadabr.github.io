@@ -1,0 +1,523 @@
+/* so turns out my awesome illustration heavy idea was out of my depth time wise, so have some nice circles instead...(that's why you might see an 'img' class name here and there)  */
+
+html {
+    background: #101823;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 100em;
+    height: 50em;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    
+}
+
+
+
+/*FIXED POSITION IS WHEN YOU WANT IT TO SCROLL WITH THE PAGE*/
+
+.dialogue {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    color: white;
+    text-shadow: 0 0 8px #bafffb;
+}
+
+
+
+span {
+    transform: translate(-50%, -50%);
+    padding: 1em;
+}
+
+
+
+/* link to next page */
+
+.next {
+    height: 30px;
+    width: 30px;
+    background: #fc9f41;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #fc9f41;
+    display: block;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top:80%;
+    transition-duration: 0.5s;
+    
+    
+}
+
+.page2 .next {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+
+.block span {
+    display: hidden;
+}
+
+/* trigger image */
+
+
+.visible {
+    height: 300px;
+    width: 300px;
+    border: #c5cbd6;
+    border-radius: 150px;
+    box-shadow: 0 0 50px #c5cbd6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+.invisible {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    border: #c5cbd6;
+    border-radius: 150px;
+    box-shadow: 0 0 60px #c5cbd6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+
+/* page 2 trigger image */
+
+
+.visible2 {
+    height: 300px;
+    width: 300px;
+    border: #c5cbd6;
+    background-color: #fff;
+    border-radius: 150px;
+    box-shadow: 0 0 50px #c5cbd6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+}
+
+.invisible2 {
+    height: 300px;
+    width: 300px;
+    border: #c5cbd6;
+    border-radius: 150px;
+    box-shadow: 0 0 60px #c5cbd6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+/* triggered objects */
+
+.object {
+    height: 30px;
+    width: 30px;
+    background: #fc9f41;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #fc9f41;
+    opacity: 0;
+}
+
+.object.one {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 3.1s ease-in;
+}
+
+.object.two {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 3s ease-in;
+    
+}
+
+
+.object.three {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 2s ease-in;
+    
+}
+
+
+.object.four {
+    float: left;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 2.3s ease-in;
+}
+
+
+
+/* pg 2 triggered objects */
+
+/* so for some reason I can't do the same multi-select class like I did with the page 1 objects like ".object.four { style; } which is why I ended up giving each object a different name. Dunno why. :( The same issue happens with the lightbulbs on page 2. I've tried both .page2.visible and .page2, .visible and so on. */
+
+.objectaway1 {
+    height: 30px;
+    width: 30px;
+    background: #fc9f41;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #fc9f41;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transition: cubic-bezier(.44,.97,.98,1);
+    transition-duration: 1.5s;
+}
+
+.objectaway2 {
+    height: 30px;
+    width: 30px;
+    background: #fc9f41;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #fc9f41;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transition: cubic-bezier(.44,.97,.98,1);
+    transition-duration: 1.5s;
+}
+
+.objectaway3 {
+    height: 30px;
+    width: 30px;
+    background: #fc9f41;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #fc9f41;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80%;
+    transition: cubic-bezier(.44,.97,.98,1);
+    transition-duration: 1.5s;
+}
+
+
+
+
+/* "PRE" EVENTS */
+
+
+
+.lightbulb:active .visible {
+    display: none;
+}
+
+.lightbulb:active .invisible {
+    display: block;
+    
+}
+
+.lightbulb:active .visible2 {
+    display: none;
+}
+
+.lightbulb:active .invisible2 {
+    display: block;
+    
+}
+/* EVENTS pg 2 */
+
+
+
+/* EVENTS
+z axis (the third value) is for depth, and the reason why it doesn't do anything if you fiddle here is cause it's supposed to be used with overlaid objects/stacked elements */ 
+
+.move:active .object.one {
+    transform: translate3d(30em, 40em, 0);
+    opacity: 1;
+}
+
+.move:active .object.two {
+    transform: translate3d(-30em, 40em, 0);
+    opacity: 1;
+}
+
+.move:active .object.three {
+    transform: translate3d(30em, -40em, 0);
+    opacity: 1;
+}
+
+.move:active .object.four {
+    transform: translate3d(-30em, -40em, 0);
+    opacity: 1;
+}
+
+
+
+
+/* EVENTS pg 2 */
+
+
+.move2:active .objectaway1 {
+    transform: translate3d(-35em, 0, 0);
+    opacity: 0;
+}
+
+.move2:active .objectaway2 {
+    transform:translate3d(35em, 0, 0);
+    opacity: 0;
+}
+
+.move2:active .objectaway3 {
+    transform: translate3d(0, 10em, 0);
+    opacity: 0;
+}
+
+
+.move2:active .back {
+    transform: translate3d(-20em, 15em, 0);
+}
+
+.next:hover {
+    background: #ef460e;
+    box-shadow: #ef460e;
+    
+}
+
+
+
+/* responsive scaling. no mobile 'cause it doesn't lend itself to mobile interaction anyway, I guess..
+
+
+SCREEN ORDER IS FROM BIGGEST TO SMALLEST DON'T FORGET THIS OTHERWISE YOU WILL BE SITTING HERE FOR 30 MINUTES*/ 
+
+
+@media screen and (max-width: 1440px) {
+
+    
+     .visible {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .invisible {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .visible2 {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .invisible2 {
+        width: 250px;
+        height:250px;
+    }
+
+
+    
+    .move:active .object.one {
+    transform: translate3d(25em, 41em, 0);
+    opacity: 1;
+}
+
+.move:active .object.two {
+    transform: translate3d(-25em, 41em, 0);
+    opacity: 1;
+}
+
+.move:active .object.three {
+    transform: translate3d(25em, -41em, 0);
+    opacity: 1;
+}
+
+.move:active .object.four {
+    transform: translate3d(-25em, -41em, 0);
+    opacity: 1;
+}
+    
+    
+    
+    .move2:active .objectaway1 {
+    transform: translate3d(-8em, 0, 0);
+    opacity: 0;
+}
+
+    .move2:active .objectaway2 {
+    transform:translate3d(8em, 0, 0);
+    opacity: 0;
+}
+
+    .move2:active .objectaway3 {
+    transform: translate3d(0, 8em, 0);
+    opacity: 0;
+}
+
+    
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    
+ .visible {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .invisible {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .visible2 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .invisible2 {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .move2:active .objectaway1 {
+    transform: translate3d(-10em, 0, 0);
+    opacity: 0;
+}
+
+    .move2:active .objectaway2 {
+    transform:translate3d(10em, 0, 0);
+    opacity: 0;
+}
+
+    .move2:active .objectaway3 {
+    transform: translate3d(0, 10em, 0);
+    opacity: 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .visible {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .invisible {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .visible2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .invisible2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+
+    
+    .next {
+        bottom: 12%;
+    }
+          
+    .page2 .next {
+    bottom: 80%;
+    left: 0;
+    right: 0;
+}
+    
+    .home {
+        top: 20%;
+    }
+    
+    /*events*/
+    
+.move:active .object.one {
+    transform: translate3d(25em, 41em, 0);
+    opacity: 1;
+}
+
+.move:active .object.two {
+    transform: translate3d(-25em, 41em, 0);
+    opacity: 1;
+}
+
+.move:active .object.three {
+    transform: translate3d(25em, -41em, 0);
+    opacity: 1;
+}
+
+.move:active .object.four {
+    transform: translate3d(-25em, -41em, 0);
+    opacity: 1;
+}
+
+
+    /*pg2*/
+    
+    .objectaway1 {
+        left: 20%;
+    }
+    
+    .objectaway2 {
+        right: 20%;
+    }
+    
+    
+    
+  .move2:active .objectaway1 {
+    transform: translate3d(-5em, 0, 0);
+    opacity: 0;
+}
+
+.move2:active .objectaway2 {
+    transform:translate3d(5em, 0, 0);
+    opacity: 0;
+}  
+    
+}
+
+
+
+

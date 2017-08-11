@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>ATTRACT</title>
+        <link rel="stylesheet" href="assets/css/css.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+    
+        
+    </head>
+
+    <body>
+    
+        <div class="container">
+            
+            <div class="move">
+            
+                <div class="lightbulb">
+                    <div class="visible"></div>
+                    <div class="invisible"></div>
+                </div>
+                
+                <div class="object one">
+                </div>
+                
+                <div class="object two">
+                </div>
+                
+                <div class="object three">
+                </div>
+                
+                <div class="object four">
+                </div>
+                
+            </div>
+    
+        
+            <div class="next"><a href="page2.html"> <img src="assets/img/backimg.png"></a></div>
+            
+            
+            
+        </div>
+        
+        <div class="dialogue">
+            <span>It's dark, man. Turn on the light.</span>
+        </div>
+        
+        
+        
+            <script type="text/javascript">
+            
+     var elm = document.querySelector(".lightbulb")
+
+elm.onmousedown = function() {
+    var other = document.querySelector(".dialogue")
+    other.innerText = "Looks like we have some friends!"
+}
+
+elm.onmouseup = function() {
+    var other = document.querySelector(".dialogue")
+    other.innerText = "It's dark, man. Turn on the light."
+}
+
+            
+        </script>
+    </body>
+
+</html>
