@@ -1,2 +1,171 @@
 /*Digital publishing CSS*/
 
+
+/*Level 3.1 */
+
+.text {
+    width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 40%;
+    
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid gold;
+    
+}
+
+.one {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.two {
+    position: absolute;
+    left: 45%;
+    top: 35%;
+}
+
+.three {
+    position: absolute;
+    left: 37%;
+    top: 46%;
+}
+
+.four {
+    position: absolute;
+    top: 53%;
+    left: 39%;
+}
+
+.five {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.six {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+}
+.seven {
+    position: absolute;
+    top:47%;
+    left: 45%;
+}
+
+.eight{
+    position: absolute;
+    top: 67%; 
+    left: 49%;
+}
+
+.nine {
+    position: absolute;
+    top: 60%;
+    left: 34%;
+}
+
+.ten {
+    position: absolute;
+    top: 52%;
+    left: 60%;
+}
+
+.eleven { 
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+.twelve {
+    position: absolute;
+    top: 47%;
+    right: 25%;
+}
+
+.thirteen {
+    position: absolute;
+    top: 26%;
+    right: 34%;
+}
+
+.fourteen {
+    position: absolute;
+    top: 59%;
+    right: 30%;
+}
+
+.fifteen {
+    position: absolute;
+    top: 43%;
+    right: 21%;
+}
+
+.sixteen {
+    position: absolute;
+    top: 33%;
+    right: 22%;
+}
+
+.seventeen {
+    position: absolute;
+    top: 45%;
+    right: 26%;
+}
+
+.eighteen {
+    position: absolute;
+    top: 27%;
+    right: 45%;
+}
+
+.nineteen {
+    position: absolute;
+    top: 58%;
+    right: 33%;
+}
+
+.twenty {
+    position: absolute;
+    top: 44%;
+    right: 28%;
+}
+
+/*Level 3.2*/
+
+
+.box2 {
+    width: 1000px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid gold;
+    
+}
+
+/*Level 3.3 */
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    margin-right: 20px;
+    right: 0;
+}
+
+
+.box3 {
+    width: 100px;
+    height: 10000px;
+    border-radius: 50px;
+    border: 3px solid gold;
+    
+}
