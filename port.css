@@ -12,10 +12,12 @@ body, html {
     
 }
 
+.intro {
+    padding: 20px;
+}
+
 span {
-    margin: 20px;
     font-family: 'Overpass Mono', monospace;
-    text-transform: lowercase;
     font-size: 25px;
     color: white;
 }
