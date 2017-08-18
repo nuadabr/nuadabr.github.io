@@ -1,0 +1,62 @@
+<DOCTYPE! html>
+<html>
+
+    <head>
+    
+        <title>Level 5 V.1</title>
+           <link rel="stylesheet" type="text/css" href="digpub.css">   
+    </head>
+    
+    <body>
+         <div class="lvl51">
+            <div class="containerone">
+                <span>Obsessions make my </span>
+                <select id="opt1">
+                    <option value="1">life</option>
+                    <option value="2">work</option>
+                </select>
+                <span>worse but my</span> 
+                <select id="opt2">
+                    <option value="2">work</option>
+                    <option value="1">life</option>
+                </select> 
+                <span>better.</span>
+                 
+            </div>
+            
+        </div>
+        
+         <span class="link13">Oh, you remembered the rule! <a href="level5v2.html">Great!</a></span>
+
+        
+        <script type="text/javascript">
+        
+            var opt1 = 1;
+            var opt2 = 2;
+
+            document.getElementById('opt1').onchange = function() {
+
+            document.querySelector('#opt2 [value="' + opt1 + '"]').selected = true;
+
+            swap();
+            }
+
+            document.getElementById('opt2').onchange = function() {
+
+            document.querySelector('#opt1 [value="' + opt2 + '"]').selected = true;
+
+            swap();
+            }
+
+            function swap() {
+            var temp = opt1;
+            opt1 = opt2;
+            opt2 = temp;
+            }
+
+        
+        </script>
+    </body>
+    
+    </html>
+    
