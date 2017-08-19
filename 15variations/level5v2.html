@@ -11,56 +11,51 @@
         <div class="lvl52">
             
             <select id="optob">
-                <option>Obsessions</option>
-                <option>Uni</option>
-                <option>Sleep</option>
-                <option>Drawing</option>
+                <option id="optone">Obsessions</option>
+                <option id="opttwo">Sleep</option>
+                <option id="optthree">Art</option>
+                <option id="optfour">Uni</option>
             </select>
             
-            <span>make my</span>
+            <span id="adds">make my</span>
             
-            <select id="opt1">
-                    <option value="1">life</option>
-                    <option value="2">work</option>
-            </select>
+            
+                <span class="optbox" id="first">life</span>
             
             <span>worse but my</span> 
             
-            <select id="opt2">
-                <option value="2">work</option>
-                <option value="1">life</option>
-            </select> 
+            
+                <span class="optbox" id="second">work</span>
             
             <span>better.</span>
 
         </div>
 
          <script type="text/javascript">
-        
-            var opt1 = 1;
-            var opt2 = 2;
+             var map = [
+    [ 'life', 'work' ],
+    [ 'health', 'work' ],
+    [ 'life', 'skills' ],
+    [ 'life', 'work' ]
+];
 
-            document.getElementById('opt1').onchange = function() {
+var select = document.getElementById('optob');
+var first = document.getElementById('first');
+var second = document.getElementById('second');
 
-            document.querySelector('#opt2 [value="' + opt1 + '"]').selected = true;
+select.onchange = function() {
+    var index = this.selectedIndex;
+  
+  if (index == 0)
+        adds.innerText = 'make my'
+    else
+        adds.innerText = 'makes my'
 
-            swap();
-            }
+    first.innerText = map[index][0];
+    second.innerText = map[index][1];
+}
 
-            document.getElementById('opt2').onchange = function() {
-
-            document.querySelector('#opt1 [value="' + opt2 + '"]').selected = true;
-
-            swap();
-            }
-
-            function swap() {
-            var temp = opt1;
-            opt1 = opt2;
-            opt2 = temp;
-            }
-
-        
+             
         </script>
     </body>
     
