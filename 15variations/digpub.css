@@ -42,6 +42,7 @@ a {
 
 sup {
     font-size: 10px;
+    text-transform: uppercase;
 }
 
 
@@ -506,6 +507,7 @@ select {
 .extra {
     text-decoration: line-through;
     font-style: italic;
+    font-size: 35px;
 }
 
 .scroll {
@@ -549,6 +551,7 @@ select {
 ::-webkit-scrollbar {
 -webkit-appearance: none;
     width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
