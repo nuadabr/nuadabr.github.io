@@ -485,57 +485,52 @@ select {
 
 /* Level 5.3 */
 .lvl53 {
-    position: absolute;
-    font-size: 35px;
+    font-size: 45px;
     font-family: monospace;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+
 }
 
+.lvl53 a {
+    color: black;
+}
 
+.lvl53 a:hover {
+    color: gold;
+}
 
-.obbox {
+.extra {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.scroll {
+    flex-basis: 20%;
+    margin: 10px;
     border: 1px solid grey;
-    border-radius: 10px;
-    padding: 5px;
-    height: 42px;
-    overflow: auto;
-    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100vh;
+    overflow: scroll;
+    
+}
+
+.rest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-}
-
-
-.worse {
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 5px;
-    height: 42px;
-    display: inline-block;
-    overflow: auto;
-    vertical-align: text-bottom;
-}
-
-.tip {
-    color: white;
-    font-size: 12px;
-}
-
-.lvl53rest {
-    padding-bottom: 4px;
-}
-
-.better {
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 6px;
-    height: 42px;
-    display: inline-block;
-    overflow: auto;
-    vertical-align: text-bottom;
 }
 
 ::-webkit-scrollbar {
-display: none;
+-webkit-appearance: none;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2.5px;
+    background-color: grey;
+    
 }
