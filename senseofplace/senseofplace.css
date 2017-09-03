@@ -1,227 +1,235 @@
 
-            body, html {
-              font-family: 'VT323', monospace;
-              background-color: #dee8f7;
-          }
+body, html {
+        font-family: 'VT323', monospace;
+        background-color: #dee8f7;
+}
 
-          a:link {
-            color: red;
-            text-decoration: none;
-          }
+i {
+        color: #520435;
+}
 
-          a:visited {
-            color: red;
-            text-decoration: none;
-          }
+a:link {
+        color: red;
+        text-decoration: none;
+}
 
-          img {
-            image-rendering: pixelated;
-            image-rendering: crisp-edges;
-          }
+a:visited {
+        color: red;
+        text-decoration: none;
+}
 
-          .placement {
-            width: 100%;
-            height: 100%;
-          }
+img {
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+}
 
-          .container {
-            margin: 0 auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-              -webkit-perspective: 800px;
-                      perspective: 800px;
-              -webkit-perspective-origin: 50% 50%;
-                      perspective-origin: 50% 50%;
-          }
+.placement {
+        width: 100%;
+        height: 100%;
+}
 
-          .cube {
-              position: relative;
-              margin: 0 auto;
-              width: 400px;
-              height: 400px;
-              -webkit-transform-style: preserve-3d;
-                      transform-style: preserve-3d;
-              /* naming the animation and assigning the attributes of it */
-              -webkit-animation-name: spin;
-                      animation-name: spin;
-              -webkit-animation-timing-function: ease-out;
-                      animation-timing-function: ease-out;
-              -webkit-animation-iteration-count: one;
-                      animation-iteration-count: one;
-              -webkit-animation-duration: 40s;
-                      animation-duration: 40s;
-              -webkit-transform-origin: 200px 200px 0;
-                  -ms-transform-origin: 200px 200px 0;
-                      transform-origin: 200px 200px 0;
-              -webkit-animation-delay: 2s;
-                      animation-delay: 2s;
-          }
+.container {
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-perspective: 800px;
+        perspective: 800px;
+        -webkit-perspective-origin: 50% 50%;
+        perspective-origin: 50% 50%;
+}
 
-          .face {
-              position: absolute;
-              height: 400px;
-              width: 400px;
-              background-color: #82454D;
-          }
+.cube {
+        position: relative;
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        /* naming the animation and assigning the attributes of it */
+        -webkit-animation-name: spin;
+        animation-name: spin;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        -webkit-animation-iteration-count: one;
+        animation-iteration-count: one;
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
+        -webkit-transform-origin: 200px 200px 0;
+        -ms-transform-origin: 200px 200px 0;
+        transform-origin: 200px 200px 0;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+}
 
-          .logout {
-              background-image: url(http://static.tumblr.com/tsbln88/I1povp302/sample.png);
-              background-size: contain;
-              -webkit-transform: translateZ(200px);
-                      transform: translateZ(200px);
-          }
+.face {
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        background-color: #82454D;
+}
 
-          .logout:hover {
-            cursor: pointer;
-          }
+.logout {
+        background-image: url(http://static.tumblr.com/tsbln88/I1povp302/sample.png);
+        background-size: contain;
+        -webkit-transform: translateZ(200px);
+        transform: translateZ(200px);
+}
 
-          .Tumblr {
-              -webkit-transform: rotateY(90deg) translateZ(200px);
-                      transform: rotateY(90deg) translateZ(200px);
-          }
+.logout:hover {
+        cursor: pointer;
+}
 
-          .Twitter {
-              -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(200px);
-                      transform: rotateY(90deg) rotateX(90deg) translateZ(200px);
-          }
+.Tumblr {
+        -webkit-transform: rotateY(90deg) translateZ(200px);
+        transform: rotateY(90deg) translateZ(200px);
+}
 
-          .Pinterest {
-              -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(200px);
-                      transform: rotateY(180deg) rotateZ(90deg) translateZ(200px);
-          }
+.Twitter {
+        -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(200px);
+        transform: rotateY(90deg) rotateX(90deg) translateZ(200px);
+}
 
-          .Snapchat {
-              -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
-                      transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
-          }
+.Pinterest {
+-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(200px);
+transform: rotateY(180deg) rotateZ(90deg) translateZ(200px);
+}
 
-          .Facebook {
-              -webkit-transform: rotateX(-90deg) translateZ(200px);
-                      transform: rotateX(-90deg) translateZ(200px);
-          }
+.Snapchat {
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
+transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
+}
 
-
-
-          /* Animation for spinning cube */
-          @-webkit-keyframes spin {
-              from, to {
-                  -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-                          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-              }
-
-              16% {
-                  -webkit-transform: rotateY(-90deg);
-                          transform: rotateY(-90deg);
-              }
-
-              33% {
-                  -webkit-transform: rotateY(-90deg) rotateZ(90deg);
-                          transform: rotateY(-90deg) rotateZ(90deg);
-              }
-
-              50% {
-                  -webkit-transform: rotateY(-180deg) rotateZ(90deg);
-                          transform: rotateY(-180deg) rotateZ(90deg);
-              }
-
-              66% {
-                  -webkit-transform: rotateY(90deg) rotateX(90deg);
-                          transform: rotateY(90deg) rotateX(90deg);
-              }
-
-              83% {
-                  -webkit-transform: rotateX(90deg);
-                          transform: rotateX(90deg);
-              }
-          }
-          @keyframes spin {
-              from, to {
-                  -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-                          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-              }
-
-              16% {
-                  -webkit-transform: rotateY(-90deg);
-                          transform: rotateY(-90deg);
-              }
-
-              33% {
-                  -webkit-transform: rotateY(-90deg) rotateZ(90deg);
-                          transform: rotateY(-90deg) rotateZ(90deg);
-              }
-
-              50% {
-                  -webkit-transform: rotateY(-180deg) rotateZ(90deg);
-                          transform: rotateY(-180deg) rotateZ(90deg);
-              }
-
-              66% {
-                  -webkit-transform: rotateY(90deg) rotateX(90deg);
-                          transform: rotateY(90deg) rotateX(90deg);
-              }
-
-              83% {
-                  -webkit-transform: rotateX(90deg);
-                          transform: rotateX(90deg);
-              }
-
-      
-          }
+.Facebook {
+-webkit-transform: rotateX(-90deg) translateZ(200px);
+transform: rotateX(-90deg) translateZ(200px);
+}
 
 
 
-          .cube:hover {
-              -webkit-animation-play-state: paused;
-                      animation-play-state: paused;
-          }
-          
-          .aboutbtn {
-            position: absolute;
-            left: 50%;
-            bottom: 1%;
-            transform: translate(-50%, -50%);
-            margin-top: 30px;
-            margin: 0 auto;
-            background: none;
-            border: none;
-            font-size: 50px;
-            z-index: 3;
-          }
+/* Animation for spinning cube */
+@-webkit-keyframes spin {
+from, to {
+-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 
-          .aboutbtn:focus {
-            outline: none;
-          }
+16% {
+-webkit-transform: rotateY(-90deg);
+transform: rotateY(-90deg);
+}
 
-          .aboutbtn:hover {
-            text-shadow: 0px 0px 5px #232728; 
-          }
-          .aboutmodal {
-              position: relative;
-              display: none;
-              position: fixed;
-              z-index: 1; /*sits on top of everything else */
-              left: 0;
-              top: 0;
-              width: 100%;
-              height: 100%;
-              
-          }
+33% {
+-webkit-transform: rotateY(-90deg) rotateZ(90deg);
+transform: rotateY(-90deg) rotateZ(90deg);
+}
 
-          #modalwin {
-            width: 100%;
-            height: 100%;
-          }
+50% {
+-webkit-transform: rotateY(-180deg) rotateZ(90deg);
+transform: rotateY(-180deg) rotateZ(90deg);
+}
 
-          .modalcontent {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              margin: 0 auto;
-              padding: 20px;
-              font-size: 30px;
-              width: 800px;
-              text-align: center;
-          }
+66% {
+-webkit-transform: rotateY(90deg) rotateX(90deg);
+transform: rotateY(90deg) rotateX(90deg);
+}
+
+83% {
+-webkit-transform: rotateX(90deg);
+transform: rotateX(90deg);
+}
+}
+@keyframes spin {
+from, to {
+-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+16% {
+-webkit-transform: rotateY(-90deg);
+transform: rotateY(-90deg);
+}
+
+33% {
+-webkit-transform: rotateY(-90deg) rotateZ(90deg);
+transform: rotateY(-90deg) rotateZ(90deg);
+}
+
+50% {
+-webkit-transform: rotateY(-180deg) rotateZ(90deg);
+transform: rotateY(-180deg) rotateZ(90deg);
+}
+
+66% {
+-webkit-transform: rotateY(90deg) rotateX(90deg);
+transform: rotateY(90deg) rotateX(90deg);
+}
+
+83% {
+-webkit-transform: rotateX(90deg);
+transform: rotateX(90deg);
+}
+
+
+}
+
+
+
+.cube:hover {
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+}
+
+.aboutbtn {
+position: absolute;
+left: 50%;
+bottom: 1%;
+transform: translate(-50%, -50%);
+margin-top: 30px;
+margin: 0 auto;
+background: none;
+border: none;
+font-size: 50px;
+z-index: 3;
+}
+
+.aboutbtn:focus {
+outline: none;
+}
+
+.aboutbtn:hover {
+text-shadow: 0px 0px 5px #232728; 
+}
+.aboutmodal {
+position: relative;
+display: none;
+position: fixed;
+z-index: 1; /*sits on top of everything else */
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+
+}
+
+#modalwin {
+width: 100%;
+height: 100%;
+}
+
+.modalcontent {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0 auto;
+padding: 20px;
+font-size: 30px;
+width: 800px;
+
+}
+
+.definition {
+font-size: 20px;
+}
