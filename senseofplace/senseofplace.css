@@ -63,8 +63,7 @@
               position: absolute;
               height: 400px;
               width: 400px;
-              background-color: aqua;
-              border: 1px solid black;
+              background-color: #82454D;
           }
 
           .logout {
