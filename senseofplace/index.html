@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NOM DE PEUR</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="senseofplace.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|VT323" rel="stylesheet">
+  </head>
+  <body>
+    <div class="placement">
+            <div class="container">
+                    <div class="cube">
+                            <div class="face logout">
+                                Log out?
+                            </div>
+                            <div class="face Tumblr">
+                                Tumblr
+                            </div>
+                            <div class="face Twitter">
+                                Twitter
+                            </div>
+                            <div class="face Pinterest">
+                                Pinterest
+                            </div>
+                            <div class="face Snapchat">
+                                Snapchat
+                            </div>
+                            <div class="face Facebook">
+                                Facebook
+                            </div>
+                            
+                        </div>
+            
+            
+        </div>
+        
+        <button id="aboutbtn" class="aboutbtn">&#x26A0;</button>
+            <div id="modalwin" class="aboutmodal">
+
+                <div class="modalcontent">
+                        
+                        <p>An exploration of my digital presence on various websites.<br>
+                        For the most part, I hide my identity and I am a private person.<br><br>
+                        If you hover on the box you can pause the animation. <br>
+                        </p>
+                </div>
+            </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        //get the modal and the button that opens it. also gets the container which will set a blur
+        var modal = document.getElementById('modalwin');
+        var button = document.getElementById('aboutbtn');
+        var content = document.getElementsByClassName('container')[0];
+
+        //span element that closes the modal
+        var close = document.getElementsByClassName("close")[0];
+
+        //logout class that switches image
+
+        var logout = document.getElementsByClassName("logout")[0];
+
+
+        //open the modal when button is clicked
+        button.onclick = function() {
+            modal.style.display = "block";
+            content.style.filter = 'blur(5px)';
+        }
+        //click outside AND anywhere to close the modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                content.style.filter = 'blur(0px)';
+            }
+        }
+
+        logout.onclick =  function() {
+            logout.style.backgroundImage = "url(http://static.tumblr.com/tsbln88/qD1ovpfs5/samplebw.png)";
+            button.style.textShadow = "0px 0px 5px #EF6E68";
+            var changetext = document.querySelector(".modalcontent");
+            changetext.innerHTML = "I'm dearly sorry, but there <i>is no logging out</i>...but you may <a href='index.html'>refresh</a> if you are desperate...";
+        }
+    </script>
+  </body>
+</html>
