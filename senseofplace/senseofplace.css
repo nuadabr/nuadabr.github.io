@@ -1,20 +1,22 @@
 
 body, html {
-        font-family: 'VT323', monospace;
-        background-color: #dee8f7;
+        font-family: 'Inconsolata', monospace;
+        background-color: #352f35;
+        background-image: url(assets/noisy_net.png);
 }
 
 i {
-        color: #520435;
+        color: #e80606;
 }
 
 a:link {
-        color: red;
+        color: #e80606;
         text-decoration: none;
+        font-style: italic;
 }
 
 a:visited {
-        color: red;
+        color: #e80606;
         text-decoration: none;
 }
 
@@ -224,12 +226,25 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 margin: 0 auto;
-padding: 20px;
-font-size: 30px;
-width: 800px;
+padding: 40px;
+font-size: 20px;
+line-height: 22px;
+width: 600px;
+color: #e1ecf2;
+border: solid 1px white;
 
+}
+
+.word {
+    font-size: 35px;
+    color: #e1ecf2;
+    text-transform: uppercase;
 }
 
 .definition {
 font-size: 20px;
+}
+
+.allcap {
+    text-transform: uppercase;
 }

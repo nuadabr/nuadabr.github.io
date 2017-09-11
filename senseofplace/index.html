@@ -5,7 +5,7 @@
     <title>NOM DE PEUR</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="senseofplace.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   </head>
   <body>
     <div class="placement">
@@ -40,10 +40,8 @@
 
                 <div class="modalcontent">
                         
-                        <p><span class="definition"><i>nom de guerre</i><br>
-                            1. an assumed name, as one under which a person fights, paints, writes, etc.; pseudonym. French: literally, war name<br>
-                        Therefore,<br> <i>nom de peur</i><br>
-                        1. an assumed name, as one under which a person <i>uses to avoid being discovered by unwanted family members, friends, and generally unwelcome netizens,</i> etc.; pseudonym. French: literally, name of fear</span><br><br>
+                    <p><span class="definition"><i><span class="word">nom de peur</i></span><br><br>
+                        1. an assumed name, as one under which a person uses to avoid being discovered (esp. online) by<i> unwanted family members, friends, and hostile netizens,</i> etc.; pseudonym. <br>From <b>nom de guerre</b> French: literally, name of fear</span><br><br><br><br>
                         An exploration of my digital presence on various websites.<br>
                         For the most part, I hide my identity and I am a private person.<br><br>
                         If you hover on the box you can pause the animation. <br>
@@ -74,12 +72,14 @@
         button.onclick = function() {
             modal.style.display = "block";
             content.style.filter = 'blur(5px)';
+            content.style.opacity = "0.4";
         }
         //click outside AND anywhere to close the modal
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
                 content.style.filter = 'blur(0px)';
+                content.style.opacity = "1";
             }
         }
 
@@ -87,7 +87,7 @@
             logout.style.backgroundImage = "url(http://static.tumblr.com/tsbln88/qD1ovpfs5/samplebw.png)";
             button.style.textShadow = "0px 0px 5px #EF6E68";
             var changetext = document.querySelector(".modalcontent");
-            changetext.innerHTML = "I'm dearly sorry, but there <i>is no logging out</i>...but you may <a href='index.html'>refresh</a> if you are desperate...";
+            changetext.innerHTML = "I'm dearly sorry, but there is <i><span class='allcap'>no logging out.</span></i><br><br><br>...but you may <a href='index.html'>refresh</a> if you are desperate...";
         }
     </script>
   </body>
