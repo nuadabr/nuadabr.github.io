@@ -72,6 +72,7 @@ img {
         background-color: #82454D;
 }
 
+
 .logout {
         background-image: url(http://static.tumblr.com/tsbln88/I1povp302/sample.png);
         background-size: contain;
@@ -106,6 +107,8 @@ transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
 .Facebook {
 -webkit-transform: rotateX(-90deg) translateZ(200px);
 transform: rotateX(-90deg) translateZ(200px);
+background-image: url(assets/Facebook.png);
+background-size: contain;
 }
 
 
@@ -194,15 +197,14 @@ background: none;
 border: none;
 font-size: 50px;
 z-index: 3;
+color: #D2DCE2;
+text-shadow: 0px 0px 5px #8BC7E5;
 }
 
 .aboutbtn:focus {
 outline: none;
 }
 
-.aboutbtn:hover {
-text-shadow: 0px 0px 5px #232728; 
-}
 .aboutmodal {
 position: relative;
 display: none;
