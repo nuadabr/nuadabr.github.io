@@ -21,7 +21,6 @@ a:visited {
 }
 
 img {
-        image-rendering: pixelated;
         image-rendering: crisp-edges;
 }
 
@@ -74,7 +73,7 @@ img {
 
 
 .logout {
-        background-image: url(http://static.tumblr.com/tsbln88/I1povp302/sample.png);
+        background-image: url(assets/Logout1.png);
         background-size: contain;
         -webkit-transform: translateZ(200px);
         transform: translateZ(200px);
