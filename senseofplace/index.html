@@ -20,7 +20,6 @@
                                 Twitter
                             </div>
                             <div class="face Pinterest">
-                                Pinterest
                             </div>
                             <div class="face Snapchat">
                                 Snapchat
@@ -39,10 +38,11 @@
 
                 <div class="modalcontent">
                         
-                    <p><span class="definition"><i><span class="word">nom de peur</i></span><br><br>
-                        1. an assumed name, as one under which a person uses to avoid being discovered (esp. online) by<i> unwanted family members, friends, and hostile netizens,</i> etc.; pseudonym. <br>From <b>nom de guerre</b> French: literally, name of fear</span><br><br><br><br>
-                        An exploration of my digital presence on various websites.<br>
-                        For the most part, I hide my identity and I am a private person.<br><br>
+                    <p><span class="word">nom de peur</span><br>
+                        <div class="definition">
+                        1. an assumed name, as one under which a person uses to avoid being discovered (esp. online) by<i> unwanted family members, friends, and hostile netizens,</i> etc.; pseudonym. From <b>nom de guerre</b> French: literally, name of fear</div><br><br>
+                        An exploration of my digital presence and constructed identities on websites that I use regularly.
+                        For the most part, I hide my identity and I am a private person.
                         If you hover on the box you can pause the animation. <br>
 
                         </p>
@@ -71,7 +71,7 @@
         button.onclick = function() {
             modal.style.display = "block";
             content.style.filter = 'blur(5px)';
-            content.style.opacity = "0.4";
+            content.style.opacity = "0.3";
         }
         //click outside AND anywhere to close the modal
         window.onclick = function(event) {
@@ -86,7 +86,7 @@
             logout.style.backgroundImage = "url(assets/Logout2.png)";
             button.style.textShadow = "0px 0px 15px #e80606";
             var changetext = document.querySelector(".modalcontent");
-            changetext.innerHTML = "I'm dearly sorry, but there is <i><span class='allcap'>no logging out.</span></i><br><br><br>...but you may <a href='index.html'>refresh</a> if you are desperate...";
+            changetext.innerHTML = "<div class='logouttxt'>I'm dearly sorry, but there is <span class='allcap'>no logging out.</span><br>You may <span class='allcap'><a href='index.html'>refresh</a></span> if you are desperate...</div>";
         }
     </script>
   </body>
