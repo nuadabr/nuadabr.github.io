@@ -82,11 +82,15 @@ img {
 .Tumblr {
         -webkit-transform: rotateY(90deg) translateZ(200px);
         transform: rotateY(90deg) translateZ(200px);
+        background-image: url(assets/Tumblr.png);
+        background-size: contain;
 }
 
 .Twitter {
         -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(200px);
         transform: rotateY(90deg) rotateX(90deg) translateZ(200px);
+        background-image: url(assets/Twitter.png);
+        background-size: contain;
 }
 
 .Pinterest {
@@ -99,6 +103,8 @@ background-size: contain;
 .Snapchat {
 -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
 transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
+background-image: url(assets/Snapchat.png);
+background-size: contain;
 }
 
 .Facebook {
@@ -186,16 +192,17 @@ animation-play-state: paused;
 .aboutbtn {
 position: absolute;
 left: 50%;
-bottom: 1%;
+bottom: 5%;
 transform: translate(-50%, -50%);
 margin-top: 30px;
 margin: 0 auto;
 background: none;
 border: none;
-font-size: 50px;
+font-size: 25px;
 z-index: 3;
 color: #D2DCE2;
 text-shadow: 0px 0px 5px #8BC7E5;
+font-family: 'Inconsolata', monospace;
 }
 
 .aboutbtn:focus {
@@ -248,7 +255,7 @@ padding-right: 110px;
 .allcap {
     text-transform: uppercase;
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .logouttxt {
