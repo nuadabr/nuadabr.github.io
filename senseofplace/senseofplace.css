@@ -1,3 +1,10 @@
+#preloadedimages {
+        width: 0px;
+        height: 0px;
+        display: inline;
+        background-image: url(assets/Logout1.png);
+        background-image: url(assets/Logout2.png);
+    }
 
 body, html {
         font-family: 'Inconsolata', monospace;
