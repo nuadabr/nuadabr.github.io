@@ -5,9 +5,9 @@ pink: rgb(244, 70, 87);
 */
 
 html {
-    -moz-transform: scale(0.5);
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
+    -moz-transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
 }
 
 @font-face {
