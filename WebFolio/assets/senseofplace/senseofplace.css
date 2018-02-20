@@ -1,0 +1,270 @@
+#preloadedimages {
+        width: 0px;
+        height: 0px;
+        display: inline;
+        background-image: url(assets/Logout1.png);
+        background-image: url(assets/Logout2.png);
+    }
+
+body, html {
+        font-family: 'Inconsolata', monospace;
+        background-color: #352f35;
+        background-image: url(assets/noisy_net.png);
+}
+
+
+a:link {
+        color: #e80606;
+        text-decoration: none;
+}
+
+a:visited {
+        color: #e80606;
+        text-decoration: none;
+}
+
+img {
+        image-rendering: crisp-edges;
+}
+
+.placement {
+        width: 100%;
+        height: 100%;
+}
+
+.container {
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-perspective: 800px;
+        perspective: 800px;
+        -webkit-perspective-origin: 50% 50%;
+        perspective-origin: 50% 50%;
+}
+
+.cube {
+        position: relative;
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        /* naming the animation and assigning the attributes of it */
+        -webkit-animation-name: spin;
+        animation-name: spin;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        -webkit-animation-iteration-count: one;
+        animation-iteration-count: one;
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
+        -webkit-transform-origin: 200px 200px 0;
+        -ms-transform-origin: 200px 200px 0;
+        transform-origin: 200px 200px 0;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+}
+
+.face {
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        background-color: #82454D;
+}
+
+
+.logout {
+        background-image: url(assets/Logout1.png);
+        background-size: contain;
+        -webkit-transform: translateZ(200px);
+        transform: translateZ(200px);
+}
+
+.logout:hover {
+        cursor: pointer;
+}
+
+.Tumblr {
+        -webkit-transform: rotateY(90deg) translateZ(200px);
+        transform: rotateY(90deg) translateZ(200px);
+        background-image: url(assets/Tumblr.png);
+        background-size: contain;
+}
+
+.Twitter {
+        -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(200px);
+        transform: rotateY(90deg) rotateX(90deg) translateZ(200px);
+        background-image: url(assets/Twitter.png);
+        background-size: contain;
+}
+
+.Pinterest {
+-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(200px);
+transform: rotateY(180deg) rotateZ(90deg) translateZ(200px);
+background-image: url(assets/Pinterest.png);
+background-size: contain;
+}
+
+.Snapchat {
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
+transform: rotateY(-90deg) rotateZ(90deg) translateZ(200px);
+background-image: url(assets/Snapchat.png);
+background-size: contain;
+}
+
+.Facebook {
+-webkit-transform: rotateX(-90deg) translateZ(200px);
+transform: rotateX(-90deg) translateZ(200px);
+background-image: url(assets/Facebook.png);
+background-size: contain;
+}
+
+
+
+/* Animation for spinning cube */
+@-webkit-keyframes spin {
+from, to {
+-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+16% {
+-webkit-transform: rotateY(-90deg);
+transform: rotateY(-90deg);
+}
+
+33% {
+-webkit-transform: rotateY(-90deg) rotateZ(90deg);
+transform: rotateY(-90deg) rotateZ(90deg);
+}
+
+50% {
+-webkit-transform: rotateY(-180deg) rotateZ(90deg);
+transform: rotateY(-180deg) rotateZ(90deg);
+}
+
+66% {
+-webkit-transform: rotateY(90deg) rotateX(90deg);
+transform: rotateY(90deg) rotateX(90deg);
+}
+
+83% {
+-webkit-transform: rotateX(90deg);
+transform: rotateX(90deg);
+}
+}
+@keyframes spin {
+from, to {
+-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+16% {
+-webkit-transform: rotateY(-90deg);
+transform: rotateY(-90deg);
+}
+
+33% {
+-webkit-transform: rotateY(-90deg) rotateZ(90deg);
+transform: rotateY(-90deg) rotateZ(90deg);
+}
+
+50% {
+-webkit-transform: rotateY(-180deg) rotateZ(90deg);
+transform: rotateY(-180deg) rotateZ(90deg);
+}
+
+66% {
+-webkit-transform: rotateY(90deg) rotateX(90deg);
+transform: rotateY(90deg) rotateX(90deg);
+}
+
+83% {
+-webkit-transform: rotateX(90deg);
+transform: rotateX(90deg);
+}
+
+
+}
+
+
+
+.cube:hover {
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+}
+
+.aboutbtn {
+position: absolute;
+left: 50%;
+bottom: 5%;
+transform: translate(-50%, -50%);
+margin-top: 30px;
+margin: 0 auto;
+background: none;
+border: none;
+font-size: 25px;
+z-index: 3;
+color: #D2DCE2;
+text-shadow: 0px 0px 5px #8BC7E5;
+font-family: 'Inconsolata', monospace;
+}
+
+.aboutbtn:focus {
+outline: none;
+}
+
+.aboutmodal {
+position: relative;
+display: none;
+position: fixed;
+z-index: 1; /*sits on top of everything else */
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+
+}
+
+#modalwin {
+width: 100%;
+height: 100%;
+}
+
+.modalcontent {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0 auto;
+padding: 20px;
+font-size: 20px;
+line-height: 22px;
+width: 650px;
+color: #e1ecf2;
+
+}
+
+.word {
+    font-size: 35px;
+    color: #e1ecf2;
+    text-transform: uppercase;
+}
+
+.definition {
+font-size: 20px;
+padding-left: 70px;
+padding-right: 110px;
+}
+
+.allcap {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.logouttxt {
+        text-align: center;
+}

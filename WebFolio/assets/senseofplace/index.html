@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NOM DE PEUR</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="senseofplace.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  </head>
+  <body>
+    <div id="preloadedimages"></div>
+    <div class="placement">
+            <div class="container">
+                    <div class="cube">
+                            <div class="face logout">
+                            </div>
+                            <div class="face Tumblr">
+                            </div>
+                            <div class="face Twitter">
+                            </div>
+                            <div class="face Pinterest">
+                            </div>
+                            <div class="face Snapchat">
+                            </div>
+                            <div class="face Facebook">
+                                
+                            </div>
+                            
+                        </div>
+            
+            
+        </div>
+        
+        <button id="aboutbtn" class="aboutbtn">&#8249;info&#8250;</button>
+            <div id="modalwin" class="aboutmodal">
+
+                <div class="modalcontent">
+                        
+                    <p><span class="word">nom de peur</span><br>
+                        <div class="definition">
+                        1. an assumed name, as one under which a person uses to avoid being discovered (esp. online) by <span class='allcap'>unwanted family members, friends, and hostile netizens,</span> etc.; pseudonym. From <span class='allcap'>nom de guerre</span> French: literally, name of fear</div><br><br>
+                        These illustrations are an exploration of my digital presence and constructed identities on websites that I use regularly.
+                        I try to minimise the amount personal information I choose to share. That said, I like choosing <i>nom de peurs</i> that reference or are a play on my real name.
+                        <br><br>If you hover on the cube you can pause the animation. <br>
+
+                        </p>
+                </div>
+            </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        //get the modal and the button that opens it. also gets the container which will set a blur
+        var modal = document.getElementById('modalwin');
+        var button = document.getElementById('aboutbtn');
+        var content = document.getElementsByClassName('container')[0];
+
+        //span element that closes the modal
+        var close = document.getElementsByClassName("close")[0];
+
+        //logout class that switches image
+
+        var logout = document.getElementsByClassName("logout")[0];
+
+
+        //open the modal when button is clicked
+        button.onclick = function() {
+            modal.style.display = "block";
+            content.style.filter = 'blur(5px)';
+            content.style.opacity = "0.2";
+        }
+        //click outside AND anywhere to close the modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                content.style.filter = 'blur(0px)';
+                content.style.opacity = "1";
+            }
+        }
+
+        logout.onclick =  function() {
+            logout.style.backgroundImage = "url(assets/Logout2.png)";
+            button.style.textShadow = "0px 0px 15px #ff0022";
+            var changetext = document.querySelector(".modalcontent");
+            changetext.innerHTML = "<div class='logouttxt'>I'm dearly sorry, but there is <span class='allcap'>no logging out.</span><br>You may <span class='allcap'><a href='index.html'>refresh</a></span> if you are desperate...</div>";
+        }
+    </script>
+  </body>
+</html>

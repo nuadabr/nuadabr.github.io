@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>nur adlina</title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="jquery.fullPage.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="section">
+            <div class="container">
+                <div class="slide about" data-anchor="slideh">
+                    <h1>NUR ADLINA ADBUL RAHMAN.
+                        <BR>3RD YEAR DESIGN STUDENT.
+                        <BR>PRINT, WEB, ILLUSTRATION.</h1>
+                    <br>
+                    <h2>arahmanlin@gmail.com</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="section active">
+
+            <!-- Print content -->
+
+
+            <div class="slide">
+                <div class="landscape">
+                    <img data-src="assets/neilgaimancovers.png">
+                    <div class="heading" id="ngcover">Book Cover Design</div>
+                    <div class="description" id="dngcover">A redesign of 3 of Neil Gaiman's books, selected for their thematic similarity. Printed with linoleum.</div>
+                </div>
+            </div>
+
+            <div class="slide">
+
+                <div class="portrait1">
+                    <div class="heading" id="CDR">CDR Promotional Campaign</div>
+                    <div class="description" id="dCDR">Posters designed as part of the (fictional) rebrand of Character Design References, an online art community
+                        and resource hub.</div>
+                    <div id="slideshow">
+                        <div>
+                            <img data-src="assets/Poster 1950.png">
+                        </div>
+                        <div>
+                            <img data-src="assets/Poster 2950.png">
+                        </div>
+                        <div>
+                            <img data-src="assets/Poster 3950.png">
+                        </div>
+                        <div>
+                            <img data-src="assets/Poster 4950.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="slide active index">
+                <!-- Index -->
+                <div class="container">
+                    <div class="heading aboutt">About
+                    </div>
+
+                    <div class="heading printt">Print</div>
+
+                    <div class="introtext">
+                        <h3>Hello! My name is Nur Adlina,
+                            <br> but you can call me Lin!</h3>
+                    </div>
+
+                    <div class="heading illustrationt">Illustration</div>
+
+                    <div class="heading webt">Web</div>
+                </div>
+            </div>
+
+            <!-- Illustration content -->
+
+            <div class="slide">
+                <!-- MCF -->
+
+                <div class="line2" id="i1"></div>
+                <div class="line2" id="i2"></div>
+                <span class="heading" id="ssl">Side-Splitting Laughter</span>
+                <div class="description" id="dssl">Illustration for Lot's Wife Magazine on the Melbourne Comedy Festival</div>
+                <div class="portrait">
+                    <img data-src="assets/smallMCF.png">
+                </div>
+
+            </div>
+
+            <div class="slide">
+                <!-- Boxophobia -->
+
+                <div class="line2" id="i3"></div>
+                <span class="heading" id="odon">Odontophobia</span>
+                <span class="description" id="dodon">The fear of teeth, dentistry and bad breath! </span>
+                <div class="portrait">
+                    <img data-src="assets/Boxophobiapackage.png">
+                </div>
+            </div>
+
+            <div class="slide">
+                <!-- Stumpy Tail -->
+
+                <span class="heading" id="stump">Why the Bear has a Stumpy Tail</span>
+                <div class="description" id="dstump">A Norwegian fairy tale illustrated.</div>
+                <div class="portrait">
+                    <img data-src="assets/stumpytailsmall.png">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Web content -->
+
+        <div class="section">
+            <!-- <div class="container"> -->
+            <div class="slide">
+                <div class="webtext">
+                    <h4>The New Arrival</h4>
+                    <span class="description">If you can't stand the heat, get out of the kitchen.</span>
+                </div>
+                <div class="iframecont">
+                    <iframe src="assets/panorama/index.html"></iframe>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+
+        <div class="section">
+
+            <div class="slide">
+                <div class="webtext">
+                    <h4>15 Variations</h4>
+                    <div class="description">A typographic exploration of Stefan Sagmeister's manifesto,
+                        <i>Obsessions.</i>
+                    </div>
+                </div>
+                <div class="iframecont">
+                    <iframe src="assets/15variations/index.html"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <div class="slide">
+                <div class="webtext">
+                    <h4>Sense of Place</h4>
+                    <div class="description">A visual exploration of my digital idenities on various social media platforms.</div>
+                </div>
+                <div class="iframecont">
+                    <iframe src="assets/senseofplace/index.html"></iframe>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('#wrapper').fullpage({
+                    anchors: ['slideh'],
+                    controlArrows: false,
+                    sectionsColor: ['#78beaa', '#251821', '#251821', '#251821', '#251821',],
+                    loopHorizontal: false,
+                    lazyLoading: true,
+                });
+
+                $("#slideshow > div:gt(0)").hide();
+
+                setInterval(function () {
+                    $('#slideshow > div:first')
+                        .fadeOut(2000)
+                        .next()
+                        .fadeIn(2000)
+                        .end()
+                        .appendTo('#slideshow');
+                }, 3000);
+            });
+        </script>
+</body>
+<!-- 
+that slideshow code
+https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ -->
+
+</html>

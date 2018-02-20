@@ -1,0 +1,64 @@
+<DOCTYPE! html>
+<html>
+
+    <head>
+    
+        <title>Level 5 V.2</title>
+           <link rel="stylesheet" type="text/css" href="digpub.css">   
+    </head>
+    
+    <body>
+        <div class="coverpage">
+            <div class="lvl52">
+
+                <select id="optob">
+                    <option id="optone">Obsessions</option>
+                    <option id="opttwo">No sleep</option>
+                    <option id="optthree">Art</option>
+                    <option id="optfour">Uni</option>
+                </select>
+
+                <span id="adds">make my</span>
+
+
+                    <span class="optbox" id="first">life</span>
+
+                <span>worse and my</span> 
+
+
+                    <span class="optbox" id="second">work</span>
+
+                <span>better.</span><br><br><span class="link14"> <a href="level5v3.html">Sometimes it's hard to just move on, especially when you want it to look perfect.</a></span>
+
+            </div>
+        </div>
+         <script type="text/javascript">
+             var map = [
+    [ 'life', 'work' ],
+    [ 'health', 'work' ],
+    [ 'life', 'skills' ],
+    [ 'self-esteem', 'passion' ]
+];
+
+var select = document.getElementById('optob');
+var first = document.getElementById('first');
+var second = document.getElementById('second');
+
+select.onchange = function() {
+    var index = this.selectedIndex;
+  
+  if (index == 0)
+        adds.innerText = 'make my'
+    else
+        adds.innerText = 'makes my'
+
+    first.innerText = map[index][0];
+    second.innerText = map[index][1];
+}
+
+             
+        </script>
+    </body>
+    
+    </html>
+    

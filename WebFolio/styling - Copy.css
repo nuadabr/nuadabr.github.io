@@ -1,0 +1,207 @@
+/* 
+purple: rgb(37, 24, 33);
+green: rgb(120, 190, 170);
+pink: rgb(244, 70, 87);
+*/
+
+
+
+@font-face {
+    font-family: 'Alte-DIN-1451-Mittelschrift';
+    src:url('assets/Fonts/Alte-DIN-1451-Mittelschrift.ttf.woff') format('woff'),
+        url('assets/Fonts/Alte-DIN-1451-Mittelschrift.ttf.svg#Alte-DIN-1451-Mittelschrift') format('svg'),
+        url('assets/Fonts/Alte-DIN-1451-Mittelschrift.ttf.eot'),
+        url('assets/Fonts/Alte-DIN-1451-Mittelschrift.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alte-DIN-1451-Mittelschrift';
+}
+
+.container {
+    position: relative;
+    padding: 40px;
+    color: white;
+}
+
+
+iframe {
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    left: 25%;
+    background-color: white;
+    border: none;
+}
+
+.portrait img {
+    max-height: 80vh;
+    position: relative;
+    left: 40%;
+}
+
+
+.about h1 {
+    font-weight: 700;
+    font-size: 31pt;
+    color: rgb(37, 24, 33);
+
+}
+
+.about h2 {
+    font-weight: 300;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20pt;
+    color: rgb(244, 70, 87);
+}
+
+h4 {
+    color: rgb(244, 70, 87);
+    font-size: 20px;
+}
+
+.description {
+    color: rgb(120, 190, 170);
+}
+
+
+
+.heading {
+    font-size: 20px;
+    color: rgb(244, 70, 87);
+}
+
+.line {
+    background-color: rgb(120, 190, 170);
+    width: 2px;
+    height: 120px;
+}
+
+.line2 {
+    background-color: rgb(120, 190, 170);
+    width: 120px;
+    height: 2px;
+}
+
+#left {
+    position: absolute;
+    top: 50vh;
+    left: 80vw;
+    width: 430px;
+}
+
+#right {
+    position: absolute;
+    width: 160px;
+    top: 50vh;
+    left: 300vh;
+}
+
+#aboutt {
+    position: fixed;
+    top: 12vh;
+    left: 145vw;    
+}
+
+#top {
+    position: fixed;
+    top: 0;
+    left: 150vw;    
+}
+
+
+#bottom {
+    position: fixed;
+    bottom: 0;
+    left: 150vw;
+}
+
+#webt {
+    position: fixed;
+    bottom: 12vh;
+    left: 151vw;
+}
+
+#printt {
+    position: fixed;
+    top: 46vh;
+    left: 107vw;
+}
+
+#illustrationt {
+    position: fixed;
+    top: 46vh;
+    left: 188.5vw;
+}
+
+#i1 {
+    position: fixed;
+    top: 50vh;
+    left: 200vw;
+    width: 270px;
+}
+
+#i2 {
+    position: fixed;
+    top: 50vh;
+    left: 295vw;
+    width: 270px;
+}
+
+#i3 {
+    position: fixed;
+    top: 50vh;
+    left: 395vw;
+    width: 440px;
+}
+
+#ssl {
+    position: fixed;
+    top: 46vh;
+    left: 205vw;
+}
+
+#dssl {
+    width: 195px;
+    position: fixed;
+    left: 205vw;
+    top: 51vh;
+}
+
+#odon {
+    position: fixed;
+    top: 46vh;
+    left: 306.5vw;
+}
+
+#dodon {
+    position: fixed;
+    width: 115px;
+    left: 306.5vw;
+    top: 51vh;
+}
+
+#stump {
+    position: fixed;
+    top: 46vh;
+    right: 72vw;
+}
+
+#dstump {
+    position: fixed;
+    width: 264px;
+    top: 51vh;
+    right: 72vw;
+}
+
+#poster1 {
+    position: relative;
+    right: 20%;
+}
