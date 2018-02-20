@@ -133,7 +133,7 @@ h4 {
     bottom: 0;
     border-right: 2px solid rgb(120, 190, 170);
     padding-right: 5px;
-    padding-bottom: 190px;
+    padding-bottom: 150px;
 }
 
 .webtext {
@@ -207,7 +207,7 @@ h4 {
 #CDR {
     position: absolute;
     top: 50%;
-    left: 23%;
+    left: 29%;
     padding-right: 120px;
     padding-bottom: 5px;
     padding-top: 40px;
