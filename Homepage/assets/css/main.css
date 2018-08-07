@@ -45,7 +45,7 @@ p {
 	width: 450px;
 	border: 1px solid blue;
 	margin: 20px;
-	padding: 20px;
+	padding: 25px;
 	background-color: white;
 }
 
@@ -99,4 +99,61 @@ h2 {
 .ten {
 	top: 100%;
 	left: 25%;
+}
+
+.eleven {
+	top: 110%;
+	left: 15%;
+}
+
+.twelve {
+	top: 120%;
+	left: 5%;
+}
+
+.thirteen {
+	top: 130%;
+}
+
+.fourteen {
+	top: 140%;
+	left: 10%;
+}
+
+.fifteen {
+	top: 150%;
+	left: 20%;
+}
+
+.sixteen {
+	top: 165%;
+	left: 30%;
+}
+
+.cont:hover {
+	z-index: 1;
+	background-color: blue;
+	color: white;
+}
+
+.cont:hover .question {
+	color: white;	
+}
+
+.nav {
+	position: absolute;
+	top: 195%;
+	padding-bottom: 20px;
+	font-size: 18px;
+	color: blue;
+}
+
+a.link, a.link:visited {
+	color: darkorange;
+	text-decoration: none;
+	background-color: white;
+}
+
+.hpage:hover {
+	font-size: 30px;
 }
