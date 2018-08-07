@@ -1,0 +1,102 @@
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	padding: 30px;
+}
+
+h1 {
+	color: blue;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0;	
+}
+
+a, a:visited {
+	background-color: blue;
+	color:white;
+	padding: 3px;	
+}
+
+p {
+	color:blue;
+}
+
+.intro {
+	width: 500px;
+	padding: 15px;
+	margin: 0 auto;
+	border: 2px solid red;
+}
+
+.intro img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.question {
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.cont {
+	position: absolute;
+	width: 450px;
+	border: 1px solid blue;
+	margin: 20px;
+	padding: 20px;
+	background-color: white;
+}
+
+h2 {
+	color: #006621;
+	font-size: 14px;
+	font-weight: 400;
+	display: inline;
+}
+
+.two {
+	left: 20%;
+	top: 20%;
+}
+
+.three {
+	top: 30%;
+	left: 30%;
+}
+
+.four {
+	top: 40%;
+	left: 40%;
+}
+
+.five {
+	top: 50%;
+	left: 50%;
+}
+
+.six {
+	top: 60%;
+	left: 60%;
+}
+
+.seven {
+	top: 70%;
+	left: 55%;
+}
+
+.eight {
+	top: 80%;
+	left: 45%;
+}
+
+.nine {
+	top: 90%;
+	left: 35%;
+}
+
+.ten {
+	top: 100%;
+	left: 25%;
+}
