@@ -147,13 +147,3 @@ h2 {
 	font-size: 18px;
 	color: blue;
 }
-
-a.link, a.link:visited {
-	color: darkorange;
-	text-decoration: none;
-	background-color: white;
-}
-
-.hpage:hover {
-	font-size: 30px;
-}
