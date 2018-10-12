@@ -1,4 +1,5 @@
 
+
 body {
 	font-family: 'Work Sans', sans-serif;
 	padding: 30px;
@@ -6,7 +7,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-	width: 3px;
+	width: 5px;
 	color: red;
 }
 
@@ -21,25 +22,11 @@ a, a:visited {
 	background-color: blue;
 	color:white;
 	padding: 3px;
-	line-height: 1.8	;	
+	line-height: 1.9;	
 }
 
 a:hover {
 	background-color: red;
-}
-
-
-.intro {
-	width: 500px;
-	padding: 15px;
-	margin: 0 auto;
-	border: 1px solid red;
-}
-
-.intro img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .question {
@@ -186,6 +173,6 @@ h2 {
 
 @keyframes marquee2 {
 	0% { transform: translateX(-50%); }
-	100% { transform: translateX(100%); }
+	100% { transform: translateX(110%); }
   }
 
