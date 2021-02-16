@@ -1,2 +1,2 @@
-# a tired student's web dump.
-hey, rando. (or teacher, or friend.)
+# web dump of all the things I've made.
+hey, rando.
